@@ -4,6 +4,7 @@
     --secondary: #FF6922;
     --light: #EFFDF5;
     --dark: #004A80;
+    --contrast-color:whitesmoke;
 }
 
 .back-to-top {
@@ -438,7 +439,6 @@
     padding-right: 0;
     border-right: none;
 }
-
 
 /*--------------------------------------------------------------
 # Faq Section
