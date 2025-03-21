@@ -8,6 +8,10 @@
     <meta content="" name="keywords">
     <meta content="" name="description">
 
+
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
     <link rel="shortcut icon" href="img/loggo.png" type="image/x-icon">
@@ -33,13 +37,107 @@
     <link href="css/style.css" rel="stylesheet">
 
     <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            border-bottom: 1px solid #e2e2e2;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4a4a4a;
+        }
+
+        nav ul li a:hover {
+            color: #6a6a6a;
+        }
+
+        nav ul li.active {
+            border-bottom: 2px solid #1a1a1a;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex .half {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .flex .half img {
+            width: 100%;
+            height: auto;
+        }
+
+        .flex .half h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .flex .half p {
+            color: #6a6a6a;
+            margin-bottom: 20px;
+        }
+
+        .flex .half button {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .flex .half {
+                width: 50%;
+            }
+
+            .flex .half:first-child {
+                padding-right: 20px;
+            }
+
+            .flex .half:last-child {
+                padding-left: 20px;
+            }
+        }
+
         .sp-box-shadow {
             box-shadow: 0 2px 3px 0 #e3e3e3;
             height: 3px;
             margin-top: -3px;
         }
 
-           .nav-tabs {
+        .nav-tabs {
             border-bottom: none;
             margin: 0 auto;
             display: table;
@@ -81,7 +179,6 @@
             display: block;
             padding: 10px 15px;
         }
-
     </style>
 </head>
 
@@ -373,100 +470,118 @@
 
 
         <!-- Our Story Start -->
-     
-        <div class="container-fluid sp-about">
-            <div class="container">
-                <h1>our story</h1>
-                <div class="row">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#menu1">About US</a></li>
-                        <li><a data-toggle="tab" href="#menu2">Timeline</a></li>
-                        <li><a data-toggle="tab" href="#menu3">Leadership</a></li>
-                        <li><a data-toggle="tab" href="#menu4">Awards & Recognition</a></li>
-                        <li><a data-toggle="tab" href="#menu5">JG Foundation</a></li>
-                    </ul>
-                    <div class="sp-box-shadow"></div>
-        
-                    <div class="tab-content">
-                        <div id="menu1" class="tab-pane fade in active">
-                            <div class="col-sm-6">
-                                <img src="img/property-1.jpg" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>About The Company</h4>
-                                <p>
-                                    The Jain Group is one of the most dynamic and admired organizations in the Real Estate, Hospitality and Finance sectors in East India. More than three decades ago, the visionary Founder and CMD...
-                                </p>
-                                <p><a href="story.html" class="sp-btn btn">view more</a></p>
-                            </div>
-                        </div>
-                        <div id="menu2" class="tab-pane fade">
-                            <div class="col-sm-6">
-                                <img src="img/property-2.jpg" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>TIMELINE</h4>
-                                <p>
-                                    Jain Group is one of the most dynamic and admired organisations in the Real Estate, Finance and Hospitality sectors in Eastern India. More than three decades ago, the visionary founder and CMD of the Group, Prem
-                                    Jain established the auto financing division, christening it as Jain Finance Corporation....
-                                </p>
-                                <p><a href="story.html" class="sp-btn btn">view more</a></p>
-                            </div>
-                        </div>
-                        <div id="menu3" class="tab-pane fade">
-                            <div class="col-sm-6">
-                                <img src="img/property-3.jpg" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>Leadership</h4>
-                                <p>
-                                    To achieve anything in life, it requires a strong vision, faith and belief in oneself, determination, dedication and lots of hard work. All things are possible for those who believe in their Dreams. We believe we
-                                    are enablers of people's dreams...
-                                </p>
-                                <p><a href="story.html" class="sp-btn btn">view more</a></p>
-                            </div>
-                        </div>
-                        <div id="menu4" class="tab-pane fade">
-                            <div class="col-sm-6">
-                                <img src="img/property-4.jpg" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>AWARDS & RECOGNITIONS</h4>
-                                <p>
-                                    We are constantly striving to raise the bar higher. Our people propel the organisation forward. An inherent culture of building upon each other’s strengths drives the Group. The yearn to break our own records
-                                    wins us accolades. ...
-                                </p>
-                                <p><a href="story.html" class="sp-btn btn">view more</a></p>
-                            </div>
-                        </div>
-                        <div id="menu5" class="tab-pane fade">
-                            <div class="col-sm-6">
-                                <img src="img/property-5.jpg" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>JG FOUNDATION</h4>
-                                <p>
-                                    JG Foundation, the philanthropic arm of Jain Group was launched with a vision to empower communities by creating multiple opportunities for the environment and underprivileged by promoting inclusive growth which
-                                    is holistic...
-                                </p>
-                                <p><a href="story.html" class="sp-btn btn">view more</a></p>
-                            </div>
-                        </div>
-                        <div id="menu6" class="tab-pane fade">
-                            <div class="col-sm-6">
-                                <img src="img/property-6.jpg" class="img-responsive" />
-                            </div>
-                            <div class="col-sm-6">
-                                <h4>Growth Presence</h4>
-                                <p>
-                                    The Jain Group has been operating for more than half a century and is well-diversified into several business sectors like Finance, Real Estate and Hospitality. As the Group has grown from strength to...
-                                </p>
-                                <p><a href="story.html" class="sp-btn btn">view more</a></p>
-                            </div>
-                        </div>
+        <div class="container">
+            <h1>
+                Our Story
+            </h1>
+            <nav>
+                <ul>
+                    <li class="active">
+                        <a class="cursor-pointer" onclick="showSection('about')">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cursor-pointer" onclick="showSection('timeline')">
+                            Timeline
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cursor-pointer" onclick="showSection('leadership')">
+                            Leadership
+                        </a>
+                    </li>
+                    <li>
+                        <a class="cursor-pointer" onclick="showSection('core')">
+                            Core Values
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="section" id="about">
+                <div class="flex">
+                    <div class="half">
+                        <img alt="A business person in a suit standing in front of a conference table with chairs in a modern office setting"
+                            src="img/about.png">
+                    </div>
+                    <div class="half">
+                        <h2>
+                            About the Company
+                        </h2>
+                        <p>
+                            The Tirupati Developer is one of the most dynamic and admired organizations in the Real
+                            Estate and Hospitality
+                            sectors in Hoogly, West Bengal. More than three decades ago, the visionary founders, Mr.
+                            Rajendra Rampal....
+                        </p>
+                        <a href="story.html" class="btn btn-primary py-3 px-5 animated fadeIn">View More</a>
                     </div>
                 </div>
             </div>
+
+            <div class="section hidden" id="timeline">
+                <div class="flex">
+                    <div class="half">
+                        <img alt="A business person in a suit standing in front of a conference table with chairs in a modern office setting"
+                            src="img/timeline.png">
+                    </div>
+                    <div class="half">
+                        <h2>
+                            Timeline
+                        </h2>
+                        <p>
+                            Tirupati Group is one of the most dynamic and admired organisations in the Real Estate and
+                            Hospitality sectors in Hoogly,
+                            West Bengal, has traversed the journey though various footprints, touching the lives of the
+                            beautiful town of Chinsurah....
+                        </p>
+                        <a href="story.html" class="btn btn-primary py-3 px-5 animated fadeIn">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section hidden" id="leadership">
+                <div class="flex">
+                    <div class="half">
+                        <img alt="A business person in a suit standing in front of a conference table with chairs in a modern office setting"
+                            src="img/learship.png">
+                    </div>
+                    <div class="half">
+                        <h2>
+                            Leadership
+                        </h2>
+                        <p>
+                            Mr. Rajendra Rampal, started his journey on a humble belief winning consumers through commitment to
+                            excellence, intelligent
+                            planning, and focused effort. His fore vision has helped the organisation grow in geometric
+                            progression....
+                        </p>
+                        <a href="story.html" class="btn btn-primary py-3 px-5 animated fadeIn">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section hidden" id="core">
+                <div class="flex">
+                    <div class="half">
+                        <img alt="A business person in a suit standing in front of a conference table with chairs in a modern office setting"
+                            src="img/core.png">
+                    </div>
+                    <div class="half">
+                        <h2>
+                            Core Values
+                        </h2>
+                        <p>
+                            The Tirupati Developer is an equal opportunity employer which fosters a conducive work environment
+                            and provides everyone
+                            within the organization the chance to grow and achieve his or her career objectives....
+                        </p>
+                        <a href="story.html" class="btn btn-primary py-3 px-5 animated fadeIn">View More</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- Our Story End -->
@@ -543,6 +658,20 @@
                 }
             });
         });
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(sectionId).classList.remove('hidden');
+
+            const navItems = document.querySelectorAll('nav ul li');
+            navItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.parentElement.classList.add('active');
+        }
     </script>
 </body>
 
